@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page de Lançamento by IldsonLeno</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Rowdies:wght@300&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./images/logo-ac.png">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">IMAGENS</a></li>
+                <li><a href="#">VÍDEOS</a></li>
+                <li><a href="#" class="preVenda">PRÉ-VENDA</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="bg-wave">
+            <img src="./images/top-bg.png" class="wave">
+            <img src="/images/man.webp" class="wave2">
+        </div>
+    <section>
+        <div class="contentBx">
+            <h1>ASSASIN'S CREED VALHALLA</h1>
+            <h2>DAWN OF RAGNAROK</h2>
+            <p>Torne-se o deus nórdico, Odin, enquanto embarca em uma aventura épica por um mundo mitológico para salvar seu filho do castigo dos deuses.</p>
+            <div class="countdown">
+                <div class="time"><div id="day"></div><span>Dias</span></div>
+                <div class="time"><div id="hour"></div><span>Horas</span></div>
+                <div class="time"><div id="minute"></div><span>Minutos</span></div>
+                <div class="time"><div id="second"></div><span>Segundos</span></div>
+            </div>
+            <a href="#">Notifique-Me!</a>
+        </div>
+    </section>
+    <script type="text/javascript">
+        var countDate = new Date('Mar 10, 2022 00:00:00').getTime();
+
+        function newYear(){
+            var now = new Date().getTime();
+                gap = countDate - now;
+
+                var second = 1000;
+                var minute = second * 60;
+                var hour = minute * 60;
+                var day = hour * 24;
+
+                var d = Math.floor(gap / (day));
+                var h = Math.floor((gap % (day)) / (hour));
+                var m = Math.floor((gap % (hour)) / (minute));
+                var s = Math.floor((gap % (minute)) / second);
+
+                document.getElementById('day').innerText = d;
+                document.getElementById('hour').innerText = h;
+                document.getElementById('minute').innerText = m;
+                document.getElementById('second').innerText = s;
+        }
+        setInterval(function(){
+            newYear();
+        },1000)
+    </script>
+</body>
+</html>

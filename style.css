@@ -1,0 +1,197 @@
+@font-face {
+    font-family: Reforma1918;
+    src: url('./fonts/Reforma1918/Reforma1918-Blanca.woff');
+}
+@font-face {
+    font-family: Reforma2018;
+    src: url('./fonts/Reforma2018/Reforma2018-Blanca.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/bg-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+header img .logo {
+    position: relative;
+    height: 50px;
+    width: 146px;
+    max-width: 100%;
+    display: inline;
+    transform: none;
+    transition: all 0s ease 0s;
+    outline: rgb(255, 0, 0) dashed 1px;
+    box-sizing: border-box;
+    outline: 2px solid black;
+}
+
+header nav {
+    position: relative;
+}
+
+header nav ul {
+    position: relative;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    color: #40C1A6;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 100px;
+}
+
+section .contentBx {
+    position: relative;
+    max-width: 600px;
+    z-index: 1000px;
+}
+
+section .contentBx h1 {
+    font-family: Reforma1918;
+    font-size: 57px;
+    letter-spacing: 0.4px;
+    line-height: 57px;
+    text-decoration: nono solid rgb(255, 255, 255);
+    text-transform: uppercase;
+    word-spacing: 0px;
+    color: #ffffff;
+    height: auto;
+    width: auto;
+    display: inline;
+    transform: none;
+    transition: all 0s ease 0s;
+    outline: rgb (255, 0, 0) dashed 1px;
+    box-sizing: border-box;
+    text-shadow: rgba(0, 0, 0, 0.85) 0px 10px 10px;
+}
+
+section .contentBx h2 {
+    font-family: Reforma2018;
+    font-size: 90px;
+    letter-spacing: 0.4px;
+    line-height: 90px;
+    text-decoration: nono solid rgb(255, 255, 255);
+    text-transform: uppercase;
+    word-spacing: 0px;
+    color: white;
+    height: auto;
+    width: auto;
+    display: inline;
+    transform: none;
+    transition: all 0s ease 0s;
+    outline: rgb (255, 0, 0) dashed 1px;
+    box-sizing: border-box;
+    text-shadow: rgba(0, 0, 0, 0.85) 0px 10px 10px;
+}
+
+section .contentBx p {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: 16px;
+    font-size: 18px;
+    letter-spacing: 00.4px;
+    line-height: 20px;
+    text-decoration: none solid rgb(255, 255, 255);
+    word-spacing: 0px;
+    color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+    display: inline;
+    transform: none;
+    transition: all 0s ease 0s;
+    outline: rgb (255, 0, 0) dashed 1px;
+    box-sizing: border-box;
+    margin: 20px;
+    text-align: justify;
+
+}
+
+section .contentBx .countdown {
+    display: flex;
+    margin: 20px 0;
+}
+
+section .contentBx .countdown .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    margin-right: 20px;
+    font-size: 48px;
+    min-width: 110px;
+    font-weight: 700;
+    padding: 10px 5px 15px;
+    border-radius: 4px;
+    color: #40C1A6;
+}
+
+section .contentBx .countdown .time span {
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #312747;
+}
+
+.bg-wave {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.wave {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 100px;
+    left: 15%;
+}
+
+.wave2 {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    left: 50%;
+    margin: 17px;
+    
+}
+
+
